@@ -24,40 +24,52 @@
 
     <main>
         <section id="about-me" class="about">
-            <div class="left-column">
+            <div class="left-column"> <!--so i can change the header without changing h2 -->
                 <h2>About Me</h2>
                 <img class="profile" src="assets/images/recent-photo.jpeg" alt="side profile of a person with long hair and glasses">
             </div>
+
             <div class="right-column">
                 <p>My name is Gavin Frazier, I am from St. Augustine Florida and I am currently learning to be a full stack developer. I am attending a coding bootcamp from the University of Central Florida, and I currently know HTML, CSS, and JavaScript.</p>
             </div>
         </section>
 
         <section id="deployed-projects" class="projects">
-            <h2>Deployed Projects</h2>
-            <div class="card">
-                <img class="notes" src="assets/images/notes-image.jpg" alt="pen writing text on paper">
-                <h3>Notes</h3>
-                <p>A website made to contain notes from my bootcamp</p>
+            <div class="left-column"> <!-- same reason as the other header classes -->
+                <h2>Deployed Projects</h2>
             </div>
-            <div class="card">
-                <img class="challenge" src="assets/images/horiseon-image.jpeg" alt="website with people around a table">
-                <h3>Module 1 Challenge</h3>
-                <p>The first challenge from my bootcamp</p>
-            </div>
-            <div class="card">
-                <img class="dnd" src="assets/images/dnd-image.jpg" alt="miniature dragon surrounded by dice">
-                <h3>D&D Website</h3>
-                <p>A website made to contain the information about my D&D Homebrew setting [W.I.P.]</p>
+
+            <div class="right-column">
+                <div class="card">
+                    <img class="notes" src="assets/images/notes-image.jpg" alt="pen writing text on paper">
+                    <h3>Notes</h3>
+                    <p class="popup">A website made to contain notes from my bootcamp</p>
+                </div>
+
+                <div class="card">
+                    <img class="challenge" src="assets/images/horiseon-image.jpeg" alt="website with people around a table">
+                    <h3>Module 1 Challenge</h3>
+                    <p class="popup">The first challenge from my bootcamp</p>
+                </div>
+
+                <div class="card">
+                    <img class="dnd" src="assets/images/dnd-image.jpg" alt="miniature dragon surrounded by dice">
+                    <h3>D&D Website</h3>
+                    <p class="popup">A website made to contain the information about my D&D Homebrew setting [W.I.P.]</p>
+                </div>
             </div>
         </section>
 
         <section id="contact-information" class="contact">
-            <h2>Contact Me</h2>
-            <ul>
-                <li>Phone Number: (904)-615-4470</li>
-                <li>Email: gavin.frazier63@gmail.com</li>
-            </ul>                    
+            <div class="left-column" ><!-- you know the drill -->
+                <h2>Contact Me</h2>
+            </div>
+            <div class="right-column">
+                <ul>
+                    <li>Phone Number: (904)-615-4470</li>
+                    <li>Email: gavin.frazier63@gmail.com</li>
+                </ul>
+            </div>
         </section>
     </main>
 </body>
