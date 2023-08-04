@@ -1,24 +1,163 @@
-* {
+/* General Styles */
+
+body * {
     display: flex;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-
+    flex-flow: column wrap;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-head {
-    display: none;
+body {
+    /*this is a temporary color so i can read until i finish the styles*/
+     color: var(--header-text); 
+     /*and a temporary background until i finish the styles and find an image*/
+     background-color:rgb(14, 43, 54); 
 }
 
-body, main {
-    flex-flow: column;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-img {
-    height: 500px;
+h2 {
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+h1 {
+    font-size: 2em;    
+}
+
+/* Header */
+
+.header {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding: 1em;
+    background-color: var(--head-foot-background);
+    color: var(--header-text);
 }
 
 header {
-    width: 10%;
-    text-align: left;
-    flex-flow: row wrap;
+    width: 25%;
+    min-width: 10em;
+    max-width: 15em;
+    margin: 1em;
+}
+
+nav {
+    flex: 1;
+    margin-left: auto;
+}
+
+nav ul {
+    flex-flow: row wrap; 
     justify-content: space-around;
+    align-content: center;
+}
+
+nav li {
+    color: white;
+    background-color: var(--main-background);
+    margin: 2em;
+}
+
+nav a {
+     padding: 1.5em; 
+     /*done this way so that the clickable area takes up the entire box */
+}
+
+
+nav li:hover {
+    filter: brightness(105%)
+    /* To highlight the box on hover */
+}
+
+/* About Me */
+
+.about {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.about img {
+    width: 10em;
+    height: 10em;
+    margin: 0.5em;
+    border-radius: 50%;
+    border: 0.5em white solid;
+    object-fit: cover;
+}
+
+.about h2 {
+    text-align: center;
+}
+
+.right-column {
+    display: flex;
+    flex: 3;
+    margin: 1em;
+}
+
+.right-column > p {
+    text-align: justify;
+    background-color: var(--body-background);
+    color: var(--body-text);
+    padding: 7.66em 1em;
+    /* 7.66 is right. it looks weird in the code. dont change it */
+}
+
+.left-column {
+    display: flex;
+    flex: 1;
+    margin: 1em;
+    padding: 1em;
+    min-width: 10em;
+    max-width: 15em;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    background-color: var(--main-background);
+    color: var(--header-text)
+}
+
+/* Temporary Rules */
+
+.card img {
+    max-width: 10em;
+}
+
+/* For smaller screens */
+
+@media only screen and (max-width: 1010px) {
+    nav {
+        flex-basis: 50%;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-flow: column wrap;
+    }
+
+    nav li {
+        text-align: center;
+        margin: 1em;
+    }
+}
+
+/* And even smaller screens */
+
+@media only screen and (max-width: ) {
+    /* code coming soon */
+}
+
+/* These are variables for easy switching of colors */
+
+:root {
+    --head-foot-background: darkslategray;
+    --main-background: darkcyan;
+    --body-background: white;
+    --header-text: white;
+    --body-text: darkslategray;
 }
