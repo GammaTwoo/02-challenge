@@ -10,7 +10,7 @@ body {
     /*this is a temporary color so i can read until i finish the styles*/
      color: var(--header-text); 
      /*and a temporary background until i finish the styles and find an image*/
-     background-color:rgb(14, 43, 54); 
+     background-color: var(--dropdown-border); 
 }
 
 a {
@@ -28,6 +28,10 @@ h1 {
 
 h2 {
     font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
 }
 
 
@@ -86,10 +90,6 @@ section {
     margin: 0.5em;
 }
 
-.about {
-    margin-top: 1em;
-}
-
 .left-column {
     flex: 1;
     background-color: var(--main-background);
@@ -101,6 +101,12 @@ section {
     background-color: var(--body-background);
     color: var(--body-text);
     margin-left: 0.5em;
+}
+
+/* About Me */
+
+.about {
+    margin-top: 1em;
 }
 
 .about > .left-column {
@@ -120,29 +126,97 @@ section {
     margin: 2em 4em 2em 2em;
 }
 
-/* W.I.P. code
+/* Deployed Projects */
 
-.popup {
+.projects > .right-column {
+    display: flex;
+    background: none;
+    flex-flow: row wrap;
+    justify-content: left;
+}
+
+.first {
+    display: flex;
+    position: relative;
+    background: var(--body-background);
+    margin: 0.5em;
+    width: fit-content;
+    flex-flow: row wrap;
+    padding: 0.5em;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.first img {
+    width: 50em;
+    object-fit: cover;
+}
+
+.card {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    background: var(--body-background);
+    margin: 0.5em;
+    width: fit-content;
+    padding: 0.5em;
+    justify-content: center;
+    text-align: center;
+}
+
+.card img {
+    width: 30em;
+    object-fit: cover;
+}
+
+.notes {
+    filter: brightness(0.85)
+}
+
+.dropdown {
     display: none;
     position: absolute;
-    top: 50%;
-    left: 100%;
-    background-color: white;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 1; /* Ensure the pop-up is above other content 
-  }
+    border: 5px var(--dropdown-border) solid;
+    padding: 0.5em;
+    top: 100%;
+    z-index: 1;
+    background-color: var(--body-background);
+    color: var(--body-text);
+    text-align: center;
+}
 
-  .card:hover .popup {
-    display: block;
-  }
+.trigger a {
+    color: var(--body-text);
+}
 
-*/
-/* Temporary Rules */
+.trigger:hover + .dropdown {
+    display: flex;
+}
 
-img {
-    max-width: 10em;
+.trigger:hover {
+    filter: brightness(1.05);
+}
+
+/* Contact Me */
+
+.contact .right-column ul{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.contact .right-column li {
+    flex: 1;
+    text-align: center;
+}
+
+.contact li a {
+    margin: 0.5em;
+    color: var(--main-background);
+}
+
+.contact li a:hover {
+    color: darkslategray;
 }
 
 /* For smaller screens */
@@ -166,7 +240,7 @@ img {
 
 /* And even smaller screens */
 
-@media only screen and (max-width: ) {
+ @media only screen and (max-width:/* T.B.D. */) { 
     /* code coming soon */
 }
 
@@ -178,4 +252,5 @@ img {
     --body-background: white;
     --header-text: white;
     --body-text: darkslategray;
+    --dropdown-border: rgb(14, 43, 54);
 }
