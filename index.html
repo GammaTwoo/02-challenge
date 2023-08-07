@@ -8,29 +8,38 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="header"><!-- so i can edit the header without editing the h1 element -->
-        <header>
-            <h1>Gavin R. Frazier</h1>
-        </header>
+    <nav>
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#deployed-projects">Deployed Projects</a></li>
+            <li><a href="#contact-information">Contact Information</a></li>
+        </ul>
+    </nav>
 
-        <nav>
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#deployed-projects">Deployed Projects</a></li>
-                <li><a href="#contact-information">Contact Information</a></li>
-            </ul>
-        </nav>
-    </div>
 
     <main>
         <section id="about-me" class="about">
-            <div class="left-column"> <!--so i can change the header without changing h2 -->
-                <h2>About Me</h2>
-                <img class="profile" src="assets/images/recent-photo.jpeg" alt="side profile of a person with long hair and glasses">
-            </div>
-
-            <div class="right-column">
-                <p>My name is Gavin Frazier, I am from St. Augustine Florida and I am currently learning to be a full stack developer. I am attending a coding bootcamp, and I currently know HTML, CSS, and JavaScript.</p>
+            <img class="profile" src="assets/images/recent-photo.jpeg" alt="side profile of a person with long hair and glasses">
+            <div class="body-container">
+                <div class="body">
+                    <h3>Web Developer</h3>
+                    <h2>Gavin R. Frazier</h2>  
+                    <p>My name is Gavin Frazier, I was born and raised in St. Augustine, Florida, and I am currently learning to be a MERN stack developer. I am attending a coding bootcamp, and I currently know HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="info-container">
+                    <div class="info">
+                        <h3>Born in</h3>
+                        <p>St. Augustine, Florida</p>
+                    </div>
+                    <div class="info">
+                        <h3>Experience</h3>
+                        <p>Still learning</p>
+                    </div>
+                    <div class="info">
+                        <h3>Date of Birth</h3>
+                        <p>March 27, 2004</p>
+                    </div>
+                </div>
             </div>
         </section>
 
