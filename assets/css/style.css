@@ -56,6 +56,7 @@ nav li {
     color: white;
     background-color: var(--main-background);
     margin: 1em;
+    border-radius: 10%;
 }
 
 nav a {
@@ -83,6 +84,7 @@ section {
     flex: 1;
     background-color: var(--main-background);
     margin-right: 0.5em;
+    border-radius: 1em;
 }
 
 .right-column {
@@ -90,6 +92,8 @@ section {
     background-color: var(--body-background);
     color: var(--body-text);
     margin-left: 0.5em;
+    margin-right: 1em;
+    border-radius: 1em;
 }
 
 /* About Me */
@@ -98,13 +102,14 @@ section {
     width: 55%;
     height: 50em;
     object-fit: cover;
+    border-radius: 1em;
 }
 
 .about {
     margin-top: 1em;
     flex-flow: row wrap;
     width: 95%;
-    align-self: center;
+    align-self: flex-start;
 }
 
 .body-container {
@@ -119,7 +124,8 @@ section {
     color: var(--body-text);
     margin-left: 0.5em;
     text-align: justify;
-    line-height: 2
+    line-height: 2;
+    border-radius: 1em;
 }
 
 .body p {
@@ -139,13 +145,47 @@ section {
     text-align: center;
 }
 
+.socials-container {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 100%;
+    flex: 1;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    width: 5em;
+    padding: 0.1em;
+    border-radius: 10%;
+    background-color: var(--body-background);
+}
+
+.socials:hover {
+    filter: brightness(1.05)
+}
+
+.socials a {
+    align-items: center;
+}
+
+.socials img {
+    margin: 0;
+    width: 95%;
+}
+
 /* Deployed Projects */
+
+.projects {
+    height: fit-content;
+}
 
 .projects > .right-column {
     display: flex;
     background: none;
-    flex-flow: row wrap;
-    justify-content: left;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .first {
@@ -153,17 +193,33 @@ section {
     position: relative;
     background: var(--body-background);
     margin: 0.5em;
-    width: 75%;
     flex-flow: row wrap;
     padding: 0.5em;
     justify-content: center;
     text-align: center;
     font-weight: bold;
+    border-radius: 1em;
+    height: fit-content;
+    width: fit-content;
+}
+
+.first .trigger {
+    width: 95%;
+    height: fit-content;
 }
 
 .first img {
-    width: 80%;
-    object-fit: cover;
+    border-radius: 1em;
+    width: 100%;
+}
+
+.notes {
+    filter: brightness(0.85)
+}
+
+.card-container {
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 .card {
@@ -174,18 +230,16 @@ section {
     margin: 0.5em;
     width: 30%;
     padding: 0.5em;
-    justify-content: center;
     text-align: center;
+    border-radius: 1em;
 }
 
 .card img {
-    width: 80%;
-    object-fit: cover;
+    width: 95%;
+    border-radius: 1em;
 }
 
-.notes {
-    filter: brightness(0.85)
-}
+
 
 .dropdown {
     display: none;
@@ -197,6 +251,7 @@ section {
     background-color: var(--body-background);
     color: var(--body-text);
     text-align: center;
+    border-radius: 1em;
 }
 
 .trigger a {
@@ -217,11 +272,12 @@ section {
 .contact .right-column ul{
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around
 }
 
 .contact .right-column li {
-    flex: 1;
     text-align: center;
+    width: fit-content;
 }
 
 .contact li a {
