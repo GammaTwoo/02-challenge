@@ -143,6 +143,7 @@ section {
 
 .info {
     text-align: center;
+    margin: 0.5em;
 }
 
 .socials-container {
@@ -289,32 +290,47 @@ section {
     color: var(--body-text);
 }
 
-/* For smaller screens */
-
-@media only screen and (max-width: 1010px) {
-    nav {
-        flex-basis: 50%;
+@media only screen and (max-width: 1450px) {
+    .info-container {
         flex-flow: column wrap;
-        justify-content: center;
-    }
-
-    nav ul {
-        flex-flow: column wrap;
-    }
-
-    nav li {
-        text-align: center;
-        margin: 1em;
     }
 }
 
-/* And even smaller screens */
+@media only screen and (max-width: 1135px) {
+    .info-socials {
+        flex-flow: row wrap;
+    }
 
- /* @media only screen and (max-width: ) { 
-    code coming soon
-} */
+    .socials-container {
+        flex-flow: column wrap;
+    }
+}
 
-/* These are variables for easy switching of colors */
+@media only screen and (max-width: 910px) {
+    .body p {
+        font-size: 0.75em;
+    }
+
+    .info h3 {
+        font-size: 1em;
+    }
+
+    .info p {
+        font-size: 0.85em;
+    }
+
+    .info {
+        text-align: left
+    }
+
+    .info-container {
+        margin: 2em 0.5em ;
+    }
+
+    .socials {
+        width: 3em;
+    }
+}
 
 :root {
     --head-foot-background: darkslategray;
