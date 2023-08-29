@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gavin, the Developer</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/reset.css"> <!-- reset css so that i can add styles without worrying about default browser styles -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="#about-me">About Me</a></li>
+        <ul> <!-- these nav links bring you down to each section on the page -->
+            <li><a href="#about-me">About Me</a></li> 
             <li><a href="#deployed-projects">Deployed Projects</a></li>
             <li><a href="#contact-information">Contact Information</a></li>
         </ul>
@@ -18,6 +18,7 @@
 
 
     <main>
+        <!-- there are so many classes because I wanted a highly customized layout -->
         <section id="about-me" class="about">
             <img class="profile" src="assets/images/recent-photo.jpeg" alt="side profile of a person with long hair and glasses">
             <div class="body-container">
@@ -26,8 +27,8 @@
                     <h2>Gavin R. Frazier</h2>
                     <p>Hello! Im Gavin, and Im on my way to being a MERN stack web developer (hopefully a full stack developer later down the line). Currently, I am looking for entry level work just to get my foot in the door, and Im ready and excited for my future as a web developer.</p>
                 </div>
-                <div class="info-socials">
-                    <div class="info-container">
+                <div class="info-socials"> <!-- contains all the basic, at a glance information about me -->
+                    <div class="info-container"> <!-- the seperate containers for each group of elements helps with responsive layout and makes it easier to change the design of the site at will -->
                         <div class="info">
                             <h3>Born in</h3>
                             <p>St. Augustine, Florida</p>
@@ -41,7 +42,7 @@
                             <p>March 27, 2004</p>
                         </div>
                     </div>
-                    <div class="socials-container">
+                    <div class="socials-container"> <!-- I didnt put these in the contact me section because I felt it was more something to look at than a method of reaching me -->
                         <div class="socials" id="github">
                             <a href="https://github.com/GammaTwoo" target="_blank">
                                 <img src="assets/images/github-logo.png">
@@ -58,20 +59,20 @@
         </section>
 
         <section id="deployed-projects" class="projects">
-            <div class="left-column"> <!-- same reason as the other header classes -->
+            <div class="left-column"> <!-- so I can have the title on the left and the information on the right -->
                 <h2>Deployed Projects</h2>
             </div>
 
             <div class="right-column">
-                <div class="first">
-                    <div class="trigger">
-                        <a href="https://gammatwoo.github.io/prework-study-guide/" target="_blank"><!--so that the whole box is a link-->
+                <div class="first"> <!-- different than the rest so that the first can be larger than the rest. im still inexperienced with CSS so I chose to do it this way -->
+                    <div class="trigger"> <!-- the trigger class triggers a dropdown for the <p> element in this section. putting the trigger class in this div also allows the entire box to be the dropdown trigger -->
+                        <a href="https://gammatwoo.github.io/prework-study-guide/" target="_blank"><!-- so that the whole box is a link -->
                             <img class="notes" src="assets/images/notes-image.jpg" alt="pen writing text on paper">
                             <h3>Notes</h3>
                         </a>
                     </div>
 
-                    <p class="dropdown">My first project, a website made to contain notes from my bootcamp. I learned how to write HTML, CSS, and JavaScript here.</p>
+                    <p class="dropdown">My first project, a website made to contain notes from my bootcamp. I learned how to write HTML, CSS, and JavaScript here.</p> <!-- all the text in the dropdown class is hidden until its parent trigger is hovered over -->
                 </div>
                 <div class="card-container">
                     <div class="card">
@@ -107,13 +108,13 @@
         </section>
 
         <section id="contact-information" class="contact">
-            <div class="left-column" ><!-- you know the drill -->
+            <div class="left-column" ><!-- same reason as the section before -->
                 <h2>Contact Me</h2>
             </div>
             <div class="right-column">
                 <ul>
-                    <li><h4>Phone Number</h4> <a href="tel:+19046154470">(904)-615-4470</a></li>
-                    <li><h4>Email</h4> <a href="mailto:gavin.frazier63@gmail.com" target="_blank">gavin.frazier63@gmail.com</a></li>
+                    <li><h4>Phone Number</h4> <a href="tel:+19046154470">(904)-615-4470</a></li> <!-- this link takes you automatically to your devices default phone call application, and fills my number in -->
+                    <li><h4>Email</h4> <a href="mailto:gavin.frazier63@gmail.com" target="_blank">gavin.frazier63@gmail.com</a></li> <!-- this link takes you to your devices default email application, and automatically fills in my email -->
                 </ul>
             </div>
         </section>

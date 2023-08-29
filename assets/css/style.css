@@ -189,6 +189,8 @@ section {
     align-items: center;
 }
 
+/* so that I can make the project bigger than the rest */
+
 .first {
     display: flex;
     position: relative;
@@ -218,6 +220,8 @@ section {
     filter: brightness(0.85)
 }
 
+/* all of the deployed projects, other than the first */
+
 .card-container {
     flex-flow: row wrap;
     justify-content: space-around;
@@ -240,7 +244,7 @@ section {
     border-radius: 1em;
 }
 
-
+/* a dropdown display that shows information about each site when you hover over its box */
 
 .dropdown {
     display: none;
@@ -281,6 +285,8 @@ section {
     width: fit-content;
 }
 
+/* so that the contact links arent an  ugly color, and change when you hover over them */
+
 .contact li a {
     margin: 0.5em;
     color: burlywood;
@@ -289,6 +295,8 @@ section {
 .contact li a:hover {
     color: var(--body-text);
 }
+
+/* For a responsive layout, down to ~680 pixels */
 
 @media only screen and (max-width: 1450px) {
     .info-container {
@@ -331,6 +339,8 @@ section {
         width: 3em;
     }
 }
+
+/* CSS variables for easy color palette changes */
 
 :root {
     --head-foot-background: #102323;
