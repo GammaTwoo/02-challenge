@@ -333,10 +333,10 @@ section {
 }
 
 :root {
-    --head-foot-background: darkslategray;
-    --main-background: darkcyan;
+    --head-foot-background: #102323;
+    --main-background: #2D505B;
     --body-background: white;
     --header-text: white;
-    --body-text: darkslategray;
-    --dropdown-border: rgb(14, 43, 54);
+    --body-text: #2D505B;
+    --dropdown-border: #0F3A47;
 }
